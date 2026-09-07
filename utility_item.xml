@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#222222">
+
+    <TextView
+        android:id="@+id/utilityType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/utilityDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/utilityPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="#00E676"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/utilityNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp" />
+
+</LinearLayout>

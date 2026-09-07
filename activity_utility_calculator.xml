@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Utility Calculator"
+            android:textSize="28sp"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Electricity -->
+        <EditText
+            android:id="@+id/electricity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Electricity Bill (IQD)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BBBBBB"
+            android:inputType="numberDecimal"
+            android:background="#1F1F1F"
+            android:padding="14dp"
+            android:drawableLeft="@drawable/ic_bolt"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Water -->
+        <EditText
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Water Bill (IQD)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BBBBBB"
+            android:inputType="numberDecimal"
+            android:background="#1F1F1F"
+            android:padding="14dp"
+            android:drawableLeft="@drawable/ic_water_drop"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Internet -->
+        <EditText
+            android:id="@+id/internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Internet Bill (IQD)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BBBBBB"
+            android:inputType="numberDecimal"
+            android:background="#1F1F1F"
+            android:padding="14dp"
+            android:drawableLeft="@drawable/ic_wifi"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Gas -->
+        <EditText
+            android:id="@+id/gas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gas Bill (IQD)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BBBBBB"
+            android:inputType="numberDecimal"
+            android:background="#1F1F1F"
+            android:padding="14dp"
+            android:drawableLeft="@drawable/ic_local_fire"
+            android:drawablePadding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Calculate Button -->
+         <Button
+            android:id="@+id/calcButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#4CAF50"
+            android:padding="14dp"
+            android:text="Calculate Total"
+            android:textColor="#263238"
+            android:textSize="18sp" />
+
+        <!-- Output -->
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: 0 IQD"
+            android:textSize="24sp"
+            android:textColor="#00E676"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="25dp"/>
+    </LinearLayout>
+</ScrollView>

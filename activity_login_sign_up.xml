@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#121212">
+
+    <LinearLayout
+        android:id="@+id/topButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/showLoginBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1F1F1F"/>
+
+        <Button
+            android:id="@+id/showSignUpBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1F1F1F"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#1E1E1E"
+        android:elevation="6dp"
+        android:layout_marginTop="100dp"
+        android:translationX="0dp">
+
+        <EditText
+            android:id="@+id/loginUsername"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:backgroundTint="#444444"
+            android:hint="Username"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:backgroundTint="#444444"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#333333"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signUpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#1E1E1E"
+        android:elevation="6dp"
+        android:layout_marginTop="100dp"
+        android:translationX="1000dp">
+
+        <EditText
+            android:id="@+id/signupUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Create Username"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:backgroundTint="#444444"/>
+
+        <EditText
+            android:id="@+id/signupPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Create Password"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:backgroundTint="#444444"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/signupConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:backgroundTint="#444444"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#333333"/>
+    </LinearLayout>
+
+</RelativeLayout>
